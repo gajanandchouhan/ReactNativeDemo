@@ -3,12 +3,13 @@ import HomeScreen from './component/HomeScreen';
 import DetailScreen from './component/DetailScreen';
 import Dashboard from './component/Dashboard';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+import LandingScreen from './component/LandingScreen';
 
 const RootStack = createStackNavigator(
   {
     Home: HomeScreen,
     Detail: DetailScreen,
-    Dashboard:Dashboard,
+    Dashboard:LandingScreen,
   },
   {
     initialRouteName: 'Home',
